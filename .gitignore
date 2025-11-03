@@ -1,0 +1,14 @@
+# Sensitive files
+gh/hosts.yml
+gh/**/*.token
+gh/**/oauth_token
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak

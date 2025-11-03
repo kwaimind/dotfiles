@@ -1,0 +1,71 @@
+tap "homebrew/bundle"
+tap "jesseduffield/lazygit"
+tap "oven-sh/bun"
+tap "supabase/tap"
+brew "python@3.13"
+brew "autojump"
+brew "awscli"
+brew "cocoapods"
+brew "fastlane"
+brew "flyctl"
+brew "gemini-cli"
+brew "gh"
+brew "git"
+brew "git-crypt"
+brew "gitleaks"
+brew "jq"
+brew "lazygit"
+brew "neovim"
+brew "openjdk@17"
+brew "ruby-build"
+brew "rbenv"
+brew "redis"
+brew "ripgrep"
+brew "watchman"
+brew "yarn"
+brew "zsh-syntax-highlighting"
+brew "oven-sh/bun/bun"
+brew "supabase/tap/supabase"
+cask "1password", args: { appdir: "/Applications" }
+cask "arc", args: { appdir: "/Applications" }
+cask "chatgpt", args: { appdir: "/Applications" }
+cask "docker-desktop", args: { appdir: "/Applications" }
+cask "firefox", args: { appdir: "/Applications" }
+cask "font-fira-code", args: { appdir: "/Applications" }
+cask "ghostty"
+cask "gpg-suite"
+cask "graphql-playground"
+cask "hiddenbar", args: { appdir: "/Applications" }
+cask "ngrok"
+cask "notion"
+cask "postman", args: { appdir: "/Applications" }
+cask "react-native-debugger"
+cask "rectangle", args: { appdir: "/Applications" }
+cask "signal", args: { appdir: "/Applications" }
+cask "slack", args: { appdir: "/Applications" }
+cask "spotify", args: { appdir: "/Applications" }
+cask "tableplus", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "warp"
+cask "whatsapp", args: { appdir: "/Applications" }
+cask "zulu@17"
+vscode "anthropic.claude-code"
+vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
+vscode "dracula-theme.theme-dracula"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "pflannery.vscode-versionlens"
+vscode "vivaxy.vscode-conventional-commits"
+vscode "wayou.vscode-todo-highlight"
+vscode "wesbos.theme-cobalt2"
+vscode "wix.vscode-import-cost"
+vscode "yzhang.markdown-all-in-one"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"
+go "kwaimind/vamos"

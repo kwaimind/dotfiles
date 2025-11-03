@@ -1,0 +1,142 @@
+{
+  "breadcrumbs.icons": false,
+  "conventionalCommits.gitmoji": false,
+  "conventionalCommits.promptScopes": false,
+  "diffEditor.codeLens": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint",
+    "source.fixAll.stylelint"
+  ],
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block",
+  "editor.cursorWidth": 5,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.letterSpacing": 1,
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "files.defaultLanguage": "typescript",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.mergeEditor": false,
+  "git.suggestSmartCommit": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.views.commits.files.layout": "list",
+  "gitlens.virtualRepositories.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {
+    "compounds": [],
+    "configurations": []
+  },
+  "search.collapseResults": "alwaysCollapse",
+  "security.workspace.trust.untrustedFiles": "open",
+  "todohighlight.keywords": [
+    "FIXME:",
+    "INFO:"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "workbench.list.defaultFindMode": "filter",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredLightColorTheme": "Monokai",
+  "workbench.startupEditor": "newUntitledFile",
+  "json.schemas": [],
+  "gitlens.views.branches.branches.layout": "list",
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "gitlens.views.stashes.files.layout": "tree",
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": false,
+    "stashes": false,
+    "tags": false,
+    "worktrees": false,
+    "contributors": false,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  "settingsSync.ignoredSettings": [],
+  "editor.dropIntoEditor.preferences": [],
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.confirmBeforeClose": "keyboardOnly",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescriptreact": true,
+    "typescript": true,
+    "javascript": true,
+    "javascriptreact": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, Source Code Pro, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Solarized Dark",
+  "window.autoDetectColorScheme": true,
+  "chat.tools.terminal.autoApprove": {
+    "pnpm typecheck": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "pnpm tsc --noEmit": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
+  "workbench.settings.applyToAllProfiles": [],
+  "claudeCode.useTerminal": true,
+  /* "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  } */
+}

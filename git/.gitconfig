@@ -1,0 +1,26 @@
+[user]
+	name = Daniel Reed
+	email = daniel.reed@mindler.se
+[core]
+	editor = nvim -f
+	excludesfile = /Users/danielreed/.gitignore
+[push]
+	autoSetupRemote = true
+[branch]
+	sort = -committerdate
+[color]
+	ui = true
+[commit]
+	template = /Users/danielreed/.stCommitMsg
+[fetch]
+	prune = true
+[alias]
+	undo = reset --soft HEAD~1
+	fixup = "!f() { git rebase -i $(git merge-base HEAD development); }; f"
+	draft = "!f() { git commit --allow-empty -m 'chore: triggering rebuild of ci/cd'; git push; git reset --hard HEAD~1; git push --force; }; f"
+	# worktree-add = "!f() { git -c filter.git-crypt.smudge=cat -c filter.git-crypt.clean=cat worktree add \"$1\" -b \"$2\"; }; f"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
