@@ -40,7 +40,6 @@ cd "$DOTFILES_DIR"
 # Claude configs
 echo "→ Copying Claude configs..."
 cp ~/.claude/CLAUDE.md "$DOTFILES_DIR/.claude/"
-cp ~/.claude/README.md "$DOTFILES_DIR/.claude/"
 cp ~/.claude/settings.json "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/commands "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/agents "$DOTFILES_DIR/.claude/"
