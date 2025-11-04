@@ -1,0 +1,12 @@
+{
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": [
+      "Bash(pnpm typecheck)",
+      "Bash(pnpm lint)",
+      "WebSearch"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

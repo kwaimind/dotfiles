@@ -9,7 +9,7 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "Syncing dotfiles to $DOTFILES_DIR..."
 
 # Create directories
-mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,homebrew,gh}
+mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,homebrew,gh,.claude}
 
 # Zsh configs
 echo "→ Copying zsh configs..."
@@ -36,5 +36,13 @@ cd "$DOTFILES_DIR/homebrew"
 brew bundle dump --force
 brew leaves > leaves.txt
 cd "$DOTFILES_DIR"
+
+# Claude configs
+echo "→ Copying Claude configs..."
+cp ~/.claude/CLAUDE.md "$DOTFILES_DIR/.claude/"
+cp ~/.claude/README.md "$DOTFILES_DIR/.claude/"
+cp ~/.claude/settings.json "$DOTFILES_DIR/.claude/"
+cp -r ~/.claude/commands "$DOTFILES_DIR/.claude/"
+cp -r ~/.claude/agents "$DOTFILES_DIR/.claude/"
 
 echo "✓ Sync complete!"

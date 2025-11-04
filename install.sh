@@ -65,5 +65,16 @@ if command -v code &> /dev/null; then
   done < "$DOTFILES_DIR/vscode/extensions.txt"
 fi
 
+# Claude configs
+if [ -d "$DOTFILES_DIR/.claude" ]; then
+  echo "→ Linking Claude configs..."
+  mkdir -p ~/.claude
+  link_file "$DOTFILES_DIR/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
+  link_file "$DOTFILES_DIR/.claude/README.md" ~/.claude/README.md
+  link_file "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
+  link_file "$DOTFILES_DIR/.claude/commands" ~/.claude/commands
+  link_file "$DOTFILES_DIR/.claude/agents" ~/.claude/agents
+fi
+
 echo "✓ Installation complete!"
 echo "  Backups saved to: $BACKUP_DIR"

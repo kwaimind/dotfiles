@@ -12,3 +12,13 @@ gh/**/oauth_token
 # Backup files
 *.backup
 *.bak
+
+# Claude files to exclude
+.claude/history.jsonl
+.claude/projects
+.claude/shell-snapshots
+.claude/statsig
+.claude/todos
+.claude/debug
+.claude/file-history
+.claude/ide
