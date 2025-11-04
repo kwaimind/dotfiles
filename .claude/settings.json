@@ -1,5 +1,4 @@
 {
-  "alwaysThinkingEnabled": true,
   "permissions": {
     "allow": [
       "Bash(pnpm typecheck)",
@@ -8,5 +7,6 @@
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "alwaysThinkingEnabled": false
 }

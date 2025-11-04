@@ -69,8 +69,8 @@
     "git-rebase-todo": "default"
   },
   "workbench.list.defaultFindMode": "filter",
-  "workbench.preferredDarkColorTheme": "Solarized Dark",
-  "workbench.preferredLightColorTheme": "Monokai",
+  "workbench.preferredDarkColorTheme": "Solarized Light",
+  "workbench.preferredLightColorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "json.schemas": [],
   "gitlens.views.branches.branches.layout": "list",
