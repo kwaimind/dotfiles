@@ -69,7 +69,7 @@
     "git-rebase-todo": "default"
   },
   "workbench.list.defaultFindMode": "filter",
-  "workbench.preferredDarkColorTheme": "Solarized Light",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.preferredLightColorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "json.schemas": [],
@@ -124,19 +124,5 @@
   "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, Source Code Pro, Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "workbench.colorTheme": "Solarized Dark",
   "window.autoDetectColorScheme": true,
-  "chat.tools.terminal.autoApprove": {
-    "pnpm typecheck": {
-      "approve": true,
-      "matchCommandLine": true
-    },
-    "pnpm tsc --noEmit": {
-      "approve": true,
-      "matchCommandLine": true
-    }
-  },
-  "workbench.settings.applyToAllProfiles": [],
   "claudeCode.useTerminal": true,
-  /* "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  } */
 }
