@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config="code ~/.zshrc"
 alias claudeconfig="code ~/.claude"
+alias top='cd "$(git rev-parse --show-toplevel)"'
 
 # creates a new branch with the end of a JIRA url
 # gtk https://test.atlassian.net/browse/TREAT-481 -> gcb feat/TREAT-481

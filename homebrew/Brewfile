@@ -32,6 +32,7 @@ cask "chatgpt", args: { appdir: "/Applications" }
 cask "docker-desktop", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
 cask "font-fira-code", args: { appdir: "/Applications" }
+cask "ghostty"
 cask "gpg-suite"
 cask "graphql-playground"
 cask "hiddenbar", args: { appdir: "/Applications" }
