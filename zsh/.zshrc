@@ -37,6 +37,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config="code ~/.zshrc"
+alias claudeconfig="code ~/.claude"
 
 # creates a new branch with the end of a JIRA url
 # gtk https://test.atlassian.net/browse/TREAT-481 -> gcb feat/TREAT-481
