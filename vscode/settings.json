@@ -70,7 +70,7 @@
   },
   "workbench.list.defaultFindMode": "filter",
   "workbench.preferredDarkColorTheme": "Solarized Dark",
-  "workbench.preferredLightColorTheme": "Cobalt2",
+  "workbench.preferredLightColorTheme": "Dracula Theme",
   "workbench.startupEditor": "newUntitledFile",
   "json.schemas": [],
   "gitlens.views.branches.branches.layout": "list",

@@ -1,0 +1,72 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "single_file_review": false,
+    "model_parameters": []
+  },
+  "disable_ai": true,
+  "inlay_hints": {
+    "enabled": false
+  },
+  "project_panel": {
+    "auto_fold_dirs": false
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "show": "never"
+  },
+  "cursor_shape": "block",
+  "cursor_blink": true,
+  "confirm_quit": true,
+  "auto_indent_on_paste": true,
+  "show_edit_predictions": true,
+  "tab_size": 2,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "prettier": {
+    "allowed": true
+  },
+  "languages": {
+    "TypeScript": {
+      "formatter": {
+        "external": {
+          "command": "cat << EOF",
+          "arguments": []
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "external": {
+          "command": "cat << EOF",
+          "arguments": []
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
+  }
+}

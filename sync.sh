@@ -9,7 +9,7 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "Syncing dotfiles to $DOTFILES_DIR..."
 
 # Create directories
-mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,homebrew,gh,.claude}
+mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,zed,homebrew,gh,.claude}
 
 # Zsh configs
 echo "→ Copying zsh configs..."
@@ -29,6 +29,11 @@ cp ~/Library/Application\ Support/Code/User/keybindings.json "$DOTFILES_DIR/vsco
 # VSCode extensions
 echo "→ Exporting VSCode extensions..."
 code --list-extensions > "$DOTFILES_DIR/vscode/extensions.txt"
+
+# Zed configs
+echo "→ Copying Zed configs..."
+cp ~/.config/zed/settings.json "$DOTFILES_DIR/zed/settings.json"
+cp ~/.config/zed/keymap.json "$DOTFILES_DIR/zed/keymap.json"
 
 # Homebrew
 echo "→ Generating Brewfile..."
