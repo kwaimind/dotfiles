@@ -29,5 +29,16 @@
     "bindings": {
       "cmd-r": "editor::FindAllReferences"
     }
+  },
+  {
+    "bindings": {
+      "cmd-shift-r cmd-shift-r": "editor::CopyRelativePath"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-i": "editor::ShowCompletions"
+    }
   }
 ]

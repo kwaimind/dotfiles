@@ -11,7 +11,7 @@
     "single_file_review": false,
     "model_parameters": []
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "inlay_hints": {
     "enabled": false
   },

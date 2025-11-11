@@ -2,7 +2,7 @@
 Be extremely concise. Sacrifice grammar for the sake of concision.
 
 ### Step 1
-Check if the current branch has bumped the patch. If so, use that version for the following commands. If not, you should run `npm version patch`. Then use this new patch version to create a changelog.
+Check if the git log to see if any of the commits in this branch have changed the version in @package.json. If yes, use that version for the following commands. If not, you should run `npm version patch`. Then use this new patch version to create a changelog.
 
 ### Step 2
 Write a very short and terse, 1 line summary of the current state of this branch compared with BASE. Add it to the @changelog.md file, to the cloest version number based on Step 1.
