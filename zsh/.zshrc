@@ -5,7 +5,7 @@ if [[ ":$FPATH:" != *":/Users/danielreed/.zsh/completions:"* ]]; then export FPA
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export VOLTA_FEATURE_PNPM=1
+export VOLTA_FEATURE_PNPM=0
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
@@ -60,3 +60,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+# pnpm
+export PNPM_HOME="/Users/danielreed/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

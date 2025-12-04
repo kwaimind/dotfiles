@@ -59,18 +59,15 @@
   },
   "search.collapseResults": "alwaysCollapse",
   "security.workspace.trust.untrustedFiles": "open",
-  "todohighlight.keywords": [
-    "FIXME:",
-    "INFO:"
-  ],
+  "todohighlight.keywords": ["FIXME:", "INFO:"],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
     "git-rebase-todo": "default"
   },
   "workbench.list.defaultFindMode": "filter",
-  "workbench.preferredDarkColorTheme": "Solarized Dark",
-  "workbench.preferredLightColorTheme": "Dracula Theme",
+  "workbench.preferredDarkColorTheme": "Cobalt2",
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
   "workbench.startupEditor": "newUntitledFile",
   "json.schemas": [],
   "gitlens.views.branches.branches.layout": "list",
@@ -118,16 +115,20 @@
     "typescriptreact": true,
     "typescript": true,
     "javascript": true,
-    "javascriptreact": true
+    "javascriptreact": true,
+    "go": true
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, Source Code Pro, Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "workbench.colorTheme": "Solarized Dark",
   "window.autoDetectColorScheme": true,
   "claudeCode.useTerminal": true,
+  "workbench.settings.applyToAllProfiles": [],
+  "go.toolsManagement.autoUpdate": true,
+  "zig.zls.enabled": "on",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": true
 }

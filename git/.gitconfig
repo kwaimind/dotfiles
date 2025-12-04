@@ -10,8 +10,6 @@
 	sort = -committerdate
 [color]
 	ui = true
-[commit]
-	template = /Users/danielreed/.stCommitMsg
 [fetch]
 	prune = true
 [alias]
@@ -24,3 +22,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[rebase]
+	updateRefs = true
