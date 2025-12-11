@@ -29,11 +29,11 @@ brew "ripgrep"
 brew "watchman"
 brew "yarn"
 brew "zsh-syntax-highlighting"
-brew "jesseduffield/lazydocker/lazydocker"
 brew "kwaimind/vamos/vamos"
 brew "oven-sh/bun/bun"
 brew "supabase/tap/supabase"
 cask "1password", args: { appdir: "/Applications" }
+cask "1password-cli"
 cask "arc", args: { appdir: "/Applications" }
 cask "chatgpt", args: { appdir: "/Applications" }
 cask "claude-code"

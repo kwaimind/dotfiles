@@ -34,14 +34,6 @@ Review the current branch, compare it with the base branch (defaults to `develop
    ## Summary
    - [2-3 concise bullet points describing what was done and why]
 
-   ## Major changes
-   - [Key technical changes, grouped by area if multiple]
-
-   ## Test plan
-   - [ ] Tests added/updated
-   - [ ] Manual testing completed
-   - [Add other relevant checkboxes based on changes]
-
    > Generated with 🤖 Claude Code
    ```
 

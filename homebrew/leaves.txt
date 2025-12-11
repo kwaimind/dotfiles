@@ -9,7 +9,6 @@ git
 git-crypt
 git-filter-repo
 gitleaks
-jesseduffield/lazydocker/lazydocker
 jq
 kwaimind/vamos/vamos
 lazygit

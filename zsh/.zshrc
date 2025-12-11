@@ -47,6 +47,26 @@ gtk() {
   git checkout -b "feat/$ticket_id"
 }
 
+# inits the aws-cli with an mfa token from 1password
+# aws-init "my.1password.com" "My AWS" "my-profile"
+aws-init() {
+  # Ensure we are logged in
+  op signin --account ${1}
+
+  # Get TOTP from 1Password
+  # Replace "AWS MFA" with your 1Password item name
+  MFA_CODE=$(op item get "${2}" --otp)
+
+  # Check if we got the code
+  if [ -z "$MFA_CODE" ]; then
+    echo "Failed to get MFA code from 1Password"
+    exit 1
+  fi
+
+  # Run acp with the MFA code
+  acp ${3} "$MFA_CODE" 3600
+}
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
