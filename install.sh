@@ -76,5 +76,14 @@ if [ -d "$DOTFILES_DIR/.claude" ]; then
   link_file "$DOTFILES_DIR/.claude/agents" ~/.claude/agents
 fi
 
+# User bin scripts
+if [ -d "$DOTFILES_DIR/bin" ]; then
+  echo "→ Linking ~/bin..."
+  mkdir -p ~/bin
+  for script in "$DOTFILES_DIR/bin"/*; do
+    [ -f "$script" ] && link_file "$script" ~/bin/"$(basename "$script")"
+  done
+fi
+
 echo "✓ Installation complete!"
 echo "  Backups saved to: $BACKUP_DIR"

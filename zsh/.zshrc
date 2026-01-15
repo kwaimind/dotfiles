@@ -9,6 +9,9 @@ export VOLTA_FEATURE_PNPM=0
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+export GOOGLE_CLOUD_PROJECT="mindler-data-science"
 
 ZSH_THEME="robbyrussell"
 
@@ -86,4 +89,4 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+# pnpm endexport PATH="$HOME/bin:$PATH"

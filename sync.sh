@@ -9,7 +9,7 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "Syncing dotfiles to $DOTFILES_DIR..."
 
 # Create directories
-mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,zed,homebrew,gh,.claude}
+mkdir -p "$DOTFILES_DIR"/{zsh,git,vscode,zed,homebrew,gh,.claude,bin}
 
 # Zsh configs
 echo "→ Copying zsh configs..."
@@ -48,5 +48,9 @@ cp ~/.claude/CLAUDE.md "$DOTFILES_DIR/.claude/"
 cp ~/.claude/settings.json "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/commands "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/agents "$DOTFILES_DIR/.claude/"
+
+# User bin scripts
+echo "→ Copying ~/bin scripts..."
+cp -r ~/bin/* "$DOTFILES_DIR/bin/"
 
 echo "✓ Sync complete!"

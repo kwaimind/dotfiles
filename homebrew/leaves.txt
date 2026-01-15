@@ -3,6 +3,7 @@ awscli
 cloudflared
 cocoapods
 fastlane
+flyctl
 gemini-cli
 gh
 git

@@ -1,6 +1,6 @@
 [user]
 	name = Daniel Reed
-	email = daniel.reed@mindler.se
+	email = danieel.reed@gmail.com
 [core]
 	editor = nvim -f
 	excludesfile = /Users/danielreed/.gitignore
