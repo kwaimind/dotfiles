@@ -1,15 +1,17 @@
 {
+  "alwaysThinkingEnabled": false,
+  "statusLine": {
+    "type": "command",
+    "command": "bash \/Users\/danielreed\/.claude\/statusline-command.sh"
+  },
+  "hooks": {},
   "permissions": {
-    "allow": [
-      "Bash(pnpm typecheck)",
-      "Bash(pnpm lint)",
-      "WebSearch"
-    ],
+    "allow": ["Bash(pnpm typecheck)", "Bash(pnpm lint)", "WebSearch"],
     "deny": [],
     "ask": []
   },
-  "alwaysThinkingEnabled": false,
   "enabledPlugins": {
-    "ralph-loop@claude-plugins-official": true
-  }
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "model": "sonnet"
 }

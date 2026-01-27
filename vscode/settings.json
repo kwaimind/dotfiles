@@ -67,7 +67,7 @@
   },
   "workbench.list.defaultFindMode": "filter",
   "workbench.preferredDarkColorTheme": "Cobalt2",
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Cobalt2",
   "workbench.startupEditor": "newUntitledFile",
   "json.schemas": [],
   "gitlens.views.branches.branches.layout": "list",

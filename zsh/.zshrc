@@ -70,6 +70,9 @@ aws-init() {
   acp ${3} "$MFA_CODE" 3600
 }
 
+alias gitinit='f() { git init && git add . && git commit -m "init" && git branch -M main && 
+  git remote add origin $1 && git push -u origin main; }; f'
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export ANDROID_HOME=$HOME/Library/Android/sdk

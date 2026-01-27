@@ -4,6 +4,8 @@ docker.docker
 dracula-theme.theme-dracula
 eamodio.gitlens
 esbenp.prettier-vscode
+github.copilot
+github.copilot-chat
 golang.go
 mikestead.dotenv
 ms-azuretools.vscode-containers
