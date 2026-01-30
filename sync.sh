@@ -48,6 +48,7 @@ cp ~/.claude/CLAUDE.md "$DOTFILES_DIR/.claude/"
 cp ~/.claude/settings.json "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/commands "$DOTFILES_DIR/.claude/"
 cp -r ~/.claude/agents "$DOTFILES_DIR/.claude/"
+cp -r ~/.claude/skills "$DOTFILES_DIR/.claude/"
 
 # User bin scripts
 echo "→ Copying ~/bin scripts..."
