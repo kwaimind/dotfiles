@@ -7,7 +7,7 @@
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": [
     "source.fixAll.eslint",
-    "source.fixAll.stylelint"
+    "source.fixAll.stylelint",
   ],
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -26,17 +26,17 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
+          "fontStyle": "italic",
+        },
+      },
+    ],
   },
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
   },
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
@@ -55,7 +55,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {
     "compounds": [],
-    "configurations": []
+    "configurations": [],
   },
   "search.collapseResults": "alwaysCollapse",
   "security.workspace.trust.untrustedFiles": "open",
@@ -63,7 +63,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
-    "git-rebase-todo": "default"
+    "git-rebase-todo": "default",
   },
   "workbench.list.defaultFindMode": "filter",
   "workbench.preferredDarkColorTheme": "Cobalt2",
@@ -80,7 +80,7 @@
     "**/.github/**",
     "**/_output/**",
     "**/*.min.*",
-    "**/*.map"
+    "**/*.map",
   ],
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
@@ -96,15 +96,15 @@
     "contributors": false,
     "repositories": false,
     "searchAndCompare": false,
-    "launchpad": false
+    "launchpad": false,
   },
   "settingsSync.ignoredSettings": [],
   "editor.dropIntoEditor.preferences": [],
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "window.confirmBeforeClose": "keyboardOnly",
   "github.copilot.enable": {
@@ -116,7 +116,7 @@
     "typescript": true,
     "javascript": true,
     "javascriptreact": true,
-    "go": true
+    "go": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, Source Code Pro, Fira Code, Menlo, Monaco, 'Courier New', monospace",
@@ -125,10 +125,20 @@
   "claudeCode.useTerminal": true,
   "workbench.settings.applyToAllProfiles": [],
   "go.toolsManagement.autoUpdate": true,
-  "zig.zls.enabled": "on",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "biome.requireConfiguration": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true,
+  },
+  "editor.screenReaderAnnounceInlineSuggestion": false,
+  "gitlens.views.fileHistory.mode": "contributors",
 }

@@ -28,8 +28,6 @@ link_file() {
 # Zsh configs
 echo "→ Linking zsh configs..."
 link_file "$DOTFILES_DIR/zsh/.zshrc" ~/.zshrc
-link_file "$DOTFILES_DIR/zsh/.zshenv" ~/.zshenv
-link_file "$DOTFILES_DIR/zsh/.zprofile" ~/.zprofile
 
 # Git config
 echo "→ Linking git config..."
@@ -57,32 +55,15 @@ fi
 echo "→ Installing Homebrew packages..."
 brew bundle --file="$DOTFILES_DIR/homebrew/Brewfile"
 
-# VSCode extensions
-if command -v code &> /dev/null; then
-  echo "→ Installing VSCode extensions..."
-  while read -r extension; do
-    code --install-extension "$extension" --force
-  done < "$DOTFILES_DIR/vscode/extensions.txt"
-fi
-
 # Claude configs
 if [ -d "$DOTFILES_DIR/.claude" ]; then
   echo "→ Linking Claude configs..."
   mkdir -p ~/.claude
   link_file "$DOTFILES_DIR/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
-  link_file "$DOTFILES_DIR/.claude/README.md" ~/.claude/README.md
   link_file "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
   link_file "$DOTFILES_DIR/.claude/commands" ~/.claude/commands
   link_file "$DOTFILES_DIR/.claude/agents" ~/.claude/agents
-fi
-
-# User bin scripts
-if [ -d "$DOTFILES_DIR/bin" ]; then
-  echo "→ Linking ~/bin..."
-  mkdir -p ~/bin
-  for script in "$DOTFILES_DIR/bin"/*; do
-    [ -f "$script" ] && link_file "$script" ~/bin/"$(basename "$script")"
-  done
+  link_file "$DOTFILES_DIR/.claude/skills" ~/.claude/skills
 fi
 
 echo "✓ Installation complete!"

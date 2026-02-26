@@ -11,8 +11,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
-export GOOGLE_CLOUD_PROJECT="mindler-data-science"
-
 ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load?
@@ -75,11 +73,6 @@ alias gitinit='f() { git init && git add . && git commit -m "init" && git branch
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-
 # bun completions
 [ -s "/Users/danielreed/.bun/_bun" ] && source "/Users/danielreed/.bun/_bun"
 . "/Users/danielreed/.deno/env"
@@ -93,3 +86,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm endexport PATH="$HOME/bin:$PATH"
+
+# peon-ping quick controls
+alias peon="bash /Users/danielreed/.claude/hooks/peon-ping/peon.sh"
+[ -f /Users/danielreed/.claude/hooks/peon-ping/completions.bash ] && source /Users/danielreed/.claude/hooks/peon-ping/completions.bash
